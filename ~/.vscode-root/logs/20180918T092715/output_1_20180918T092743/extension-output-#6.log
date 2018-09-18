@@ -1,0 +1,7 @@
+[Info  - 9:59:57 AM] 1 files total
+[Info  - 9:59:57 AM] Indexing project for definitions and static references
+Parsing file:///var/www/html/objectoriented/ex.php
+[Info  - 9:59:57 AM] Indexing project for dynamic references
+Parsing file:///var/www/html/objectoriented/ex.php
+[Info  - 9:59:57 AM] 0 Packages
+[Info  - 9:59:57 AM] All 1 PHP files parsed in 0 seconds. 140 MiB allocated.
