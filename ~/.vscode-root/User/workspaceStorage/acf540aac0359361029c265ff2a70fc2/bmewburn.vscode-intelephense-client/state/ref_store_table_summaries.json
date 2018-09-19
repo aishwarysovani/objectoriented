@@ -1,0 +1,15 @@
+[
+{"uri":"file:///var/www/html/objectoriented/commersial.php","identifiers":[]}
+,
+{"uri":"file:///var/www/html/objectoriented/ex.php","identifiers":["stdclass","$name","$age","$city","json_encode"]}
+,
+{"uri":"file:///var/www/html/objectoriented/inventory.php","identifiers":["file_get_contents","json_decode","true","print_r"]}
+,
+{"uri":"file:///var/www/html/objectoriented/regexpression.php","identifiers":["validatename","validatenum","date","fopen","fread","filesize","print_r","str_replace","fclose"]}
+,
+{"uri":"file:///var/www/html/objectoriented/stock.php","identifiers":["checknum","checkstring","json_encode","fopen","fwrite","fclose"]}
+,
+{"uri":"file:///var/www/html/objectoriented/stockinventory.php","identifiers":["file_get_contents","json_decode","true","print_r"]}
+,
+{"uri":"file:///var/www/html/objectoriented/utility.php","identifiers":["validatename","fscanf","stdin","preg_match","validatenum","checkstring","filter_var","filter_validate_int","checknum"]}
+]

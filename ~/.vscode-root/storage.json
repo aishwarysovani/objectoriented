@@ -23,6 +23,11 @@
             "label": "Ctrl+Shift+T",
             "isNative": true
         },
+        "workbench.action.openRecent": {
+            "id": "workbench.action.openRecent",
+            "label": "Ctrl+R",
+            "isNative": true
+        },
         "workbench.action.files.save": {
             "id": "workbench.action.files.save",
             "label": "Ctrl+S",
@@ -470,5 +475,25 @@
             "file:///var/www/html/objectoriented"
         ],
         "files2": []
+    },
+    "windowsState": {
+        "openedWindows": [],
+        "lastActiveWindow": {
+            "folderUri": {
+                "$mid": 1,
+                "fsPath": "/var/www/html/objectoriented",
+                "external": "file:///var/www/html/objectoriented",
+                "path": "/var/www/html/objectoriented",
+                "scheme": "file"
+            },
+            "backupPath": "/var/www/html/objectoriented/~/.vscode-root/Backups/1bc0b5b714f5c4a64d0a404cd8ae0b9f",
+            "uiState": {
+                "mode": 0,
+                "x": 65,
+                "y": 24,
+                "width": 1301,
+                "height": 744
+            }
+        }
     }
 }
