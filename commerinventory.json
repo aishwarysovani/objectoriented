@@ -1,1 +1,10 @@
-{"rice":[{"name":"basmati","total_value":"1000"}],"0":900}
+{
+    "airtel": [
+ 
+       {
+          "name": "airtel3G",
+          "total_value":"1000"
+       }
+ 
+    ]
+}

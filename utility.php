@@ -210,6 +210,11 @@ class LinkedList
         }
         echo "\n";
     }
+
+    function size()
+    {
+        return $this->count;
+    }
 }
 
 
@@ -250,7 +255,39 @@ public function isEmpty()
 }
 }
 
-//queue by using linkedlist
+
+
+//class for deck
+class deck
+{
+    protected $deck=array();
+    protected $n;
+    function deckinitialize($SUITS,$RANKS)
+    {
+        $this->n = sizeOf($SUITS) *sizeOf($RANKS)-1;
+        $this->deck = array($this->n);
+
+        for($i = 0; $i < sizeOf($RANKS); $i++) {
+            for ($j = 0; $j <sizeOf($SUITS); $j++) {
+                $this->deck[sizeOf($SUITS)*$i + $j] = $RANKS[$i] . " of " . $SUITS[$j];
+            }
+        }
+        return $this->deck;
+    }
+
+    function shuffle($deck)
+    {
+        for($i = 0; $i < $this->n; $i++) {
+            $r = $i + floor(rand(0,1) * ($this->n-$i));
+            $temp = $this->deck[$r];
+            $this->deck[$r] = $this->deck[$i];
+            $this->deck[$i] = $temp;
+        }
+        return $this->deck;
+    }
+}
+
+//class for queue implemented by linked list
 class node1  {
 	public $next;
     public $key;
@@ -258,6 +295,7 @@ class node1  {
 class queue1 {
 	private $front = null;
     private $back = null;
+    public $count=0;
  public function isEmpty()
     {
         return $this->front == null;
@@ -279,8 +317,15 @@ function  Enqueue($data) {
 		$this->front =$this->back;
 	} else {
 		$old->next = $this->back;
-	}
+    }
+    $this->count++;
 }
+
+function size()
+    {
+        return $this->count;
+    }
 }
+
 
 ?>

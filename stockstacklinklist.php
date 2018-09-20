@@ -1,7 +1,7 @@
 <?php
 include "utility.php";
 echo "Amount of Stock accounts in file:\n";
-$json = file_get_contents('./commerinventory.json');
+$json = file_get_contents('commerinventory.json');
 $someArray = json_decode($json, true);
 echo $someArray["rice"][0]["total_value"];
 $stklist=new Stack1();
@@ -54,7 +54,7 @@ file_put_contents('commerinventory.json', $jsonData);
 function sold()
 {
     $stklist=new Stack1();
-    $json = file_get_contents('./commerinventory.json');
+    $json = file_get_contents('commerinventory.json');
     $someArray = json_decode($json, true);
 echo"\n enter total number of share to sold:";
 $n=checknum();
