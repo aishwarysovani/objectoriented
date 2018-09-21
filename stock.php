@@ -25,15 +25,21 @@ for($i=1;$i<=$stock;$i++)
 
 
 //convert to json data
-$data1=$name;
-$data2=array("share_no"=>$share_no,"share_value"=>$share_value,"total amount"=>$total_amount);
-echo json_encode(array("name"=>$data1,$data2));
+$data=array();
+for($i=1;$i<=$stock;$i++)
+{
+    $data[$i]['name']=$name[$i];
+    $data[$i]['share_no']=$share_no[$i];
+    $data[$i]['share_value']=$share_value[$i];
+    $data[$i]['total_amount']=$total_amount[$i];
+}
 
-//store in json file
+//write data in json file
 $jsonFile = "stock.json";
 $fh = fopen($jsonFile, 'w');
-$json = json_encode(array("name"=>$data1,$data2));
-fwrite($fh, $json);
-fclose($fh);
+$jsonData = json_encode($data);
+file_put_contents('stock.json', $jsonData);
+
+echo"data stored in json file";
 
 ?>

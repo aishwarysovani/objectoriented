@@ -1,0 +1,29 @@
+[
+    {
+        "name": "sd",
+        "address": {
+            "city": "desfc",
+            "state": "fv",
+            "mob_no": 541,
+            "zip": 5824
+        }
+    },
+    {
+        "name": "as",
+        "address": {
+            "city": "dfv",
+            "state": "fvdf",
+            "mob_no": 584,
+            "zip": 524
+        }
+    },
+    {
+        "name": "gs",
+        "address": {
+            "city": "defcd",
+            "state": "edfcd",
+            "mob_no": 5641,
+            "zip": 6524
+        }
+    }
+]

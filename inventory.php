@@ -4,7 +4,7 @@
 $json = file_get_contents('./inventory.json');
 
 //Decode JSON
-$someArray = json_decode($json, true);
+$someArray = json_decode($json,true);
 print_r($someArray);                                                                    // Dump all data of the Array
 $price_rice=$someArray["rice"][0]["weight"] * $someArray["rice"][0]["price"];
 echo "bismati rice price=" . $price_rice;                                                  // Access Array data

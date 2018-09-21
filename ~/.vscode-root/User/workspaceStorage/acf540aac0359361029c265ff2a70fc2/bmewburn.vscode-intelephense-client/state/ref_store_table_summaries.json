@@ -1,9 +1,13 @@
 [
-{"uri":"file:///var/www/html/objectoriented/commersial.php","identifiers":["file_get_contents","json_decode","true","stock_account","valueof","readline","checknum","addshare","removeshare","saveaccount","array_push","json_encode","file_put_contents"]}
+{"uri":"file:///var/www/html/objectoriented/commersial.php","identifiers":["file_get_contents","json_decode","true","stock_account","valueof","readline","checknum","addshare","removeshare","saveaccount","json_encode","file_put_contents"]}
 ,
 {"uri":"file:///var/www/html/objectoriented/comsharelinklist.php","identifiers":["linkedlist","checknum","insertfirst","insertlast","readlistinlist","deletenode1"]}
 ,
+{"uri":"file:///var/www/html/objectoriented/datetimetransaction.php","identifiers":["queue1","file_get_contents","json_decode","true","enqueue","size","dqueue"]}
+,
 {"uri":"file:///var/www/html/objectoriented/deck.php","identifiers":["sizeof","floor","rand"]}
+,
+{"uri":"file:///var/www/html/objectoriented/deckbyqueue.php","identifiers":["queue1","deck","deckinitialize","shuffle","enqueue","dqueue"]}
 ,
 {"uri":"file:///var/www/html/objectoriented/inventory.php","identifiers":["file_get_contents","json_decode","true","print_r"]}
 ,
@@ -15,5 +19,5 @@
 ,
 {"uri":"file:///var/www/html/objectoriented/stockstacklinklist.php","identifiers":["file_get_contents","json_decode","true","stack1","checknum","purchesed","sold","push","pop","array_push","json_encode","file_put_contents"]}
 ,
-{"uri":"file:///var/www/html/objectoriented/utility.php","identifiers":["validatename","fscanf","stdin","preg_match","validatenum","checkstring","filter_var","filter_validate_int","checknum","stock_account","$new","valueof","addshare","removeshare","saveaccount","listnode","$data","$next","__construct","null","readnode","linkedlist","$firstnode","$lastnode","$count","isempty","insertfirst","deletenode1","insertlast","readlist","readlistinlist","node2","$element","stack1","$front","$back","push","true","pop","node1","$key","queue1","dqueue","enqueue"]}
+{"uri":"file:///var/www/html/objectoriented/utility.php","identifiers":["validatename","fscanf","stdin","preg_match","validatenum","checkstring","filter_var","filter_validate_int","checknum","stock_account","$new","valueof","addshare","removeshare","saveaccount","listnode","$data","$next","__construct","null","readnode","linkedlist","$firstnode","$lastnode","$count","isempty","insertfirst","deletenode1","insertlast","readlist","readlistinlist","size","node2","$element","stack1","$front","$back","push","true","pop","deck","$deck","$n","deckinitialize","sizeof","shuffle","floor","rand","node1","$key","queue1","dqueue","enqueue"]}
 ]

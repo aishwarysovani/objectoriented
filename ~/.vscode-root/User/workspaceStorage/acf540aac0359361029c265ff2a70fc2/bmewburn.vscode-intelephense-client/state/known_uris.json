@@ -16,4 +16,8 @@
 "file:///var/www/html/objectoriented/utility.php"
 ,
 "file:///var/www/html/objectoriented/stockinventory.php"
+,
+"file:///var/www/html/objectoriented/datetimetransaction.php"
+,
+"file:///var/www/html/objectoriented/deckbyqueue.php"
 ]

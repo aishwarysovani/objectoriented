@@ -1,0 +1,15 @@
+[2018-09-21 09:17:47.638] [main] [info] update#setState idle
+[2018-09-21 09:18:17.645] [main] [info] update#setState checking for updates
+[2018-09-21 09:18:37.671] [main] [error] Error: net::ERR_NAME_RESOLUTION_FAILED
+[2018-09-21 09:18:37.672] [main] [info] update#setState idle
+[2018-09-21 10:18:17.677] [main] [info] update#setState checking for updates
+[2018-09-21 10:18:37.702] [main] [error] Error: net::ERR_NAME_RESOLUTION_FAILED
+[2018-09-21 10:18:37.702] [main] [info] update#setState idle
+[2018-09-21 11:18:17.678] [main] [info] update#setState checking for updates
+[2018-09-21 11:18:37.702] [main] [error] Error: net::ERR_NAME_RESOLUTION_FAILED
+[2018-09-21 11:18:37.702] [main] [info] update#setState idle
+[2018-09-21 12:18:17.710] [main] [info] update#setState checking for updates
+[2018-09-21 12:18:37.731] [main] [error] Error: net::ERR_NAME_RESOLUTION_FAILED
+[2018-09-21 12:18:37.731] [main] [info] update#setState idle
+[2018-09-21 13:18:19.638] [main] [info] update#setState checking for updates
+[2018-09-21 13:18:20.707] [main] [info] update#setState available for download

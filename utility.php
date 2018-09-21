@@ -262,6 +262,8 @@ class deck
 {
     protected $deck=array();
     protected $n;
+
+    //function to initialize deck
     function deckinitialize($SUITS,$RANKS)
     {
         $this->n = sizeOf($SUITS) *sizeOf($RANKS)-1;
@@ -275,6 +277,7 @@ class deck
         return $this->deck;
     }
 
+    //function to shuffle the deck
     function shuffle($deck)
     {
         for($i = 0; $i < $this->n; $i++) {
