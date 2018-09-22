@@ -1,4 +1,6 @@
 [
+{"uri":"file:///var/www/html/objectoriented/addressbook.php","identifiers":["file_get_contents","json_decode","true","checknum","checkstring","array_push","json_encode","file_put_contents","sizeof","update","ksort","deletefield"]}
+,
 {"uri":"file:///var/www/html/objectoriented/commersial.php","identifiers":["file_get_contents","json_decode","true","stock_account","valueof","readline","checknum","addshare","removeshare","saveaccount","json_encode","file_put_contents"]}
 ,
 {"uri":"file:///var/www/html/objectoriented/comsharelinklist.php","identifiers":["linkedlist","checknum","insertfirst","insertlast","readlistinlist","deletenode1"]}
@@ -7,13 +9,13 @@
 ,
 {"uri":"file:///var/www/html/objectoriented/deck.php","identifiers":["sizeof","floor","rand"]}
 ,
-{"uri":"file:///var/www/html/objectoriented/deckbyqueue.php","identifiers":["queue1","deck","deckinitialize","shuffle","enqueue","dqueue"]}
+{"uri":"file:///var/www/html/objectoriented/deckbyqueue.php","identifiers":["sizeof","queue1","deck","deckinitialize","shuffle","enqueue","dqueue"]}
 ,
 {"uri":"file:///var/www/html/objectoriented/inventory.php","identifiers":["file_get_contents","json_decode","true","print_r"]}
 ,
 {"uri":"file:///var/www/html/objectoriented/regexpression.php","identifiers":["validatename","validatenum","date","fopen","fread","filesize","print_r","str_replace","fclose"]}
 ,
-{"uri":"file:///var/www/html/objectoriented/stock.php","identifiers":["checknum","checkstring","json_encode","fopen","fwrite","fclose"]}
+{"uri":"file:///var/www/html/objectoriented/stock.php","identifiers":["checknum","checkstring","fopen","json_encode","file_put_contents"]}
 ,
 {"uri":"file:///var/www/html/objectoriented/stockinventory.php","identifiers":["file_get_contents","json_decode","true","print_r"]}
 ,

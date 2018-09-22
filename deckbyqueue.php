@@ -19,11 +19,13 @@ for($i = 0; $i < sizeOf($RANKS); $i++) {
     }
 }
 //to print deck by using queue implemented by linkedlist
-for ($i = 0; $i < 4; $i++) {
-    echo "\n ** Person " . ($i + 1) . " **\n";
-  for ($j = 0; $j < 9; $j++) {
-      echo"\n" . $que->Dqueue();
-  }
-}
+echo"\t Person 1 \t Person 2 \tPerson 3 \t Person 4";
+    echo"\n \n";
+        for ($i = 0; $i < 9; $i++) {
+            for ($j = 0; $j < 4; $j++) {
+                echo"\t"  . $que->Dqueue();
+            }
+            echo"\n";
+        }
 
 ?>

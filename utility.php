@@ -1,5 +1,7 @@
 <?php
-//function for validate name input
+/**
+ *@function for validate name input
+ * */
 function validatename()
 {
     fscanf(STDIN,'%s',$str);
@@ -16,8 +18,10 @@ function validatename()
     }
 }
 
-//function for number validation
-function validatenum()
+/**
+*function for number validation
+*/
+ function validatenum()
 {
     fscanf(STDIN,'%d',$num);
     if (!preg_match('/^[0-9]*$/', $num))
@@ -32,7 +36,9 @@ function validatenum()
     }
 }
 
-//function to check if input is string or not
+/*
+*function to check if input is string or not
+*/
 function checkstring()
 {
     fscanf(STDIN,'%s',$str);
@@ -50,7 +56,9 @@ function checkstring()
 }
 
 
-//function for number validation
+/*
+*function for number validation
+*/
 function checknum()
 {
     fscanf(STDIN,'%d',$num);
@@ -68,39 +76,6 @@ function checknum()
 }
 
 
-//class of stock account
-class stock_account
-{
-    protected $new;
-   
-    //function to show values of file
-    function valueOf($total,$name)
-    {
-        echo"\n total value of " . $name . " in account=" . $total;
-    }
-
-    //function to buy shares
-    function addShare($total,$add)
-    {
-        $this->new=$total+$add;
-        echo"\n bought shares" . $add;
-        echo"\n new account balance is=" . $this->new;
-    }
-
-    //function to sell shares
-    function removeShare($total,$remove)
-    {
-        $this->new=$total-$remove;
-        echo"\n sold shares " . $remove;
-        echo"\n new account balance is=" . $this->new;
-    }
-
-    //function to return value which save in file
-    function saveAccount()
-    {
-        return $this->new;
-    }
-}
 
 //class for linked list
 class ListNode

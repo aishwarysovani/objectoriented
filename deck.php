@@ -1,10 +1,14 @@
 <?php
 
-//array initializes with values
+/**
+ * array initializes with values
+*/
 $SUITS = array("Clubs", "Diamonds", "Hearts", "Spades");
 $RANKS =array("2", "3", "4", "5", "6", "7", "8", "9", "10","Jack", "Queen", "King", "Ace");
 
-//initialize deck
+/*
+*initialize deck
+*/
 $n = sizeOf($SUITS) *sizeOf($RANKS)-1;
         $deck = array($n);
 
@@ -24,11 +28,14 @@ $n = sizeOf($SUITS) *sizeOf($RANKS)-1;
 
     
     // print shuffled deck in 2d array
-        for ($i = 0; $i < 4; $i++) {
-            echo "\n ** Person " . ($i + 1) . " **\n";
-            for ($j = 0; $j < 9; $j++) {
-                echo "\n" . $deck[$i + $j * 4];
+    echo"\t Person 1 \t Person 2 \tPerson 3 \t Person 4";
+    echo"\n \n";
+        for ($i = 0; $i < 9; $i++) {
+            for ($j = 0; $j < 4; $j++) {
+                echo "\t" . $deck[$i + $j * 4];
             }
+            echo"\n";
         }
+    
     
 ?>

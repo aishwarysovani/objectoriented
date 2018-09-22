@@ -1,12 +1,20 @@
 <?php
+/**
+ * addressbook contain name,address address field contains city,state,mob no and zip for perticular user
+ * also have function for addressbook 1.add to 2.edit 3.sort 4.delete and 
+ * 5.display whole data 
+ */
 include "utility.php";
 $json = file_get_contents('adressbook.json');
 $someArray = json_decode($json, true);
-echo"enter your choice:1.add to addressbook \n2.edit addressbook \n3.sort addressbook \n4.delete from addressbook \n5.show addressbook";
+echo"enter your choice:\n1.add to addressbook \n2.edit addressbook \n3.sort addressbook \n4.delete from addressbook \n5.show addressbook";
 $choice=checknum();
 switch($choice)
 {
-    case 1:echo"enter your name:";
+    /**
+     * case for add account to addressbook
+    */
+     case 1:echo"enter your name:";
             $name=checkstring();
             echo"enter your city:";
             $city=checkstring();
@@ -28,7 +36,10 @@ switch($choice)
             file_put_contents('adressbook.json', $jsonData);
             break;
     
-    case 2:echo"enter name which you want to edit:";
+    /**
+     * case for edit account from addressbook
+    */
+     case 2:echo"enter name which you want to edit:";
             $name=checkstring();
             $json = json_decode($json, true);
             {
@@ -36,7 +47,7 @@ switch($choice)
             {
             if($json[$i]['name']==$name)
             {
-                echo"enter field name which you want to edit i.e.1.city 2.state 3.mob_no 4.zip:";
+                echo"enter field name which you want to edit i.e.\n1.city \n2.state \n3.mob_no \n4.zip:";
                 $new=checknum();
                 update($new,$i);
                 break;
@@ -45,24 +56,34 @@ switch($choice)
             }
             break;
 
-    case 3:$array=array();
-            $json = json_decode($json, true);
+    /**
+     * case for sort fields of addressbook according to name
+    */
+     case 3:$array=array();
+            $temp=array();
+            $array= json_decode($json, true);
             {
-            for($i=0;$i<sizeof($json);$i++)
+            for($i=0;$i<sizeof($array);$i++)
             {
-                $array=$json[$i]['name'];
+                for($j=$i+1;$j<sizeof($array);$j++)
+                {
+                    if($array[$i]['name']>$array[$j]['name'])
+                    {
+                    $temp=$array[$i];
+                    $array[$i]=$array[$j];
+                    $array[$j]=$temp;
+                    }
+                }
             }
             }
-            $data=ksort($array);
-            //$Array=json_decode($json,true);
-            //ksort($Array);
-            $jsonData = json_encode($data);
+            $jsonData = json_encode($array);
             file_put_contents('adressbook.json', $jsonData);
             break;
             
-            
-
-    case 4:echo"enter name which you want to delete:";
+    /**
+     * case to remove entry from addressbook
+    */
+     case 4:echo"enter name which you want to delete:";
             $name=checkstring();
             $json = json_decode($json, true);
             {
@@ -76,6 +97,9 @@ switch($choice)
             }
             break;
     
+    /**
+     * case for display whole data of addressbook
+    */
     case 5:$json=json_decode($json,true);
             {
             for($i=0;$i<sizeof($json);$i++)
@@ -95,7 +119,9 @@ switch($choice)
 }
 
 
-
+/**
+ * function for updateing entry of addressbook by taking name from user
+*/
 function update($new,$i)
 {
     $json = file_get_contents('adressbook.json');
@@ -119,7 +145,7 @@ function update($new,$i)
                 break;
 
         case 3:echo"enter mob no to update:";
-                $mob_no=checknum()();
+                $mob_no=checknum();
                 $json[$i]['address']['mob_no']=$mob_no;
                 $jsonData = json_encode($json);
                 file_put_contents('adressbook.json', $jsonData);
@@ -136,27 +162,21 @@ function update($new,$i)
     }
 }
 
-
+//function for deleting entry of addressbook
 function deletefield($name,$i)
 {
+    $json_array=array();
     $json = file_get_contents('adressbook.json');
-    $json=json_decode($json,true);
-    unset($json[$i]['name']);
-    unset($json[$i]['address']);
-    unset($json[$i]['address']['city']);
-    unset($json[$i]['address']['state']);
-    unset($json[$i]['address']['mob_no']);
-    unset($json[$i]['address']['zip']);
-    $jsonData = json_encode($json);
+    $json_array=json_decode($json,true);
+    unset($json_array[$i]);
+    $jsonData = json_encode($json_array);
     file_put_contents('adressbook.json', $jsonData);
 
 }
 
 
 
-
-
-/** [
+/* [
     {
         "name": "sd",
         "address": {

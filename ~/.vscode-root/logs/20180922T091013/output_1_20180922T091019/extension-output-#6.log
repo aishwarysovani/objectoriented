@@ -1,0 +1,27 @@
+[Info  - 9:10:28 AM] 12 files total
+[Info  - 9:10:28 AM] Indexing project for definitions and static references
+Parsing file:///var/www/html/objectoriented/datetimetransaction.php
+Parsing file:///var/www/html/objectoriented/stockinventory.php
+Parsing file:///var/www/html/objectoriented/utility.php
+Parsing file:///var/www/html/objectoriented/stock.php
+Parsing file:///var/www/html/objectoriented/stockstacklinklist.php
+Parsing file:///var/www/html/objectoriented/commersial.php
+Parsing file:///var/www/html/objectoriented/comsharelinklist.php
+Parsing file:///var/www/html/objectoriented/inventory.php
+Parsing file:///var/www/html/objectoriented/deckbyqueue.php
+Parsing file:///var/www/html/objectoriented/deck.php
+Parsing file:///var/www/html/objectoriented/regexpression.php
+[Info  - 9:10:29 AM] Indexing project for dynamic references
+Parsing file:///var/www/html/objectoriented/datetimetransaction.php
+Parsing file:///var/www/html/objectoriented/stockinventory.php
+Parsing file:///var/www/html/objectoriented/utility.php
+Parsing file:///var/www/html/objectoriented/stock.php
+Parsing file:///var/www/html/objectoriented/stockstacklinklist.php
+Parsing file:///var/www/html/objectoriented/commersial.php
+Parsing file:///var/www/html/objectoriented/comsharelinklist.php
+Parsing file:///var/www/html/objectoriented/inventory.php
+Parsing file:///var/www/html/objectoriented/deckbyqueue.php
+Parsing file:///var/www/html/objectoriented/deck.php
+Parsing file:///var/www/html/objectoriented/regexpression.php
+[Info  - 9:10:29 AM] 0 Packages
+[Info  - 9:10:29 AM] All 12 PHP files parsed in 0 seconds. 140 MiB allocated.

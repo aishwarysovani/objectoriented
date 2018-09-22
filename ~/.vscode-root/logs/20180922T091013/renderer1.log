@@ -1,0 +1,2 @@
+[2018-09-22 09:10:21.830] [renderer1] [info] no standard startup: panel is active
+[2018-09-22 16:24:25.726] [renderer1] [error] doSave(2) - exit - resulted in a save error: Error: File Modified Since {"$mid":1,"fsPath":"/var/www/html/objectoriented/adressbook.json","external":"file:///var/www/html/objectoriented/adressbook.json","path":"/var/www/html/objectoriented/adressbook.json","scheme":"file"}
